@@ -53,6 +53,101 @@ p {
 }
 
 /* ======================= Header section ========================== */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+@media screen and (min-width: 428px) {
+  .container {
+    width: 428px;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 786px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    width: 1158px;
+  }
+}
+.logo-studio {
+  color: var(--dark-color);
+}
+
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-decoration: none;
+
+  color: var(--primary-brand-color);
+}
+
+@media screen and (max-width: 767px) {
+  .header {
+    padding-top: 24px;
+    padding-bottom: 24px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .nav-list,
+  .address {
+    display: none;
+  }
+}
+
+.menu-button {
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+
+.main-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mobile-menu-container {
+  display: flex;
+  flex-direction: column;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+  padding-top: 80px;
+  padding-right: 35px;
+  padding-left: 40px;
+  padding-bottom: 40px;
+  background-color: var(--white-background-color);
+  z-index: 1000;
+}
+
+/* ======================= Header section ========================== */
+/* 
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+
 .header {
   border-bottom: 1px solid var(--accent-color);
   box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
@@ -148,10 +243,10 @@ p {
   color: var(--text-color);
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 
 /* ======================= 1st section/Hero section ========================== */
-.overlay {
+/* .overlay {
   max-width: 1440px;
   height: 600px;
   margin-left: auto;
@@ -169,13 +264,6 @@ p {
 
 .hero-wraper {
   text-align: center;
-}
-.container {
-  margin-left: auto;
-  margin-right: auto;
-  width: 1158px;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 .hero {
@@ -229,11 +317,11 @@ p {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--pressed-state-color);
-}
+} */
 
 /* ======================= Modal ========================== */
 
-.backdrop {
+/* .backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -483,10 +571,10 @@ p {
 .modal-btn:hover {
   background-color: var(--pressed-state-color);
   fill: var(--white-background-color);
-}
+} */
 
 /* ======================= 2nd section/ Features section ========================== */
-.features-list {
+/* .features-list {
   display: flex;
   gap: 24px;
 }
@@ -538,10 +626,10 @@ p {
   letter-spacing: 0.02em;
 
   color: var(--text-color);
-}
+} */
 
 /* ======================= 3rd section/ What we are doing ========================== */
-.pictures {
+/* .pictures {
   padding-bottom: 120px;
 }
 
@@ -574,10 +662,10 @@ p {
 
 .team .item {
   width: calc((100% - 72px) / 4);
-}
+} */
 
 /* ======================= 4th section/Members section ========================== */
-.info {
+/* .info {
   padding: 32px 0;
 }
 
@@ -649,10 +737,10 @@ p {
 .socials-link:hover,
 .socials-link:focus {
   background-color: #404bbf;
-}
+} */
 
 /* ======================= 5th section/ Clients section ========================== */
-.clients {
+/* .clients {
   padding-top: 120px;
   padding-bottom: 120px;
 }
@@ -699,9 +787,9 @@ p {
 .companies-item {
   fill: currentColor;
 }
-
+ */
 /* ======================= Footer section ========================== */
-.footer {
+/* .footer {
   padding-top: 100px;
   padding-bottom: 100px;
 
@@ -870,10 +958,10 @@ p {
 }
 .subscribe-icon {
   fill: var(--white-background-color);
-}
+} */
 /* ======================= Portfolio Main ========================== */
 
-.section {
+/* .section {
   padding: 96px 0 120px;
 }
 
@@ -1017,3 +1105,4 @@ p {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
+ */
