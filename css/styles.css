@@ -106,11 +106,31 @@ p {
   }
 }
 
-.menu-button {
+.menu-button-open {
   background-color: transparent;
   cursor: pointer;
   border: none;
   padding: 0;
+}
+
+.menu-button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+  width: 24px;
+  height: 24px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 24px;
+  margin-right: 24px;
+
+  background-color: var(--white-color);
+  border-radius: 50%;
+  color: var(--dark-color);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  cursor: pointer;
 }
 
 .main-info {
@@ -119,10 +139,13 @@ p {
   justify-content: space-between;
 }
 
+.menu-button-close-icon {
+  fill: var(--dark-color);
+}
 .mobile-menu-container {
   display: flex;
   flex-direction: column;
-
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -135,6 +158,76 @@ p {
   padding-bottom: 40px;
   background-color: var(--white-background-color);
   z-index: 1000;
+}
+
+.menu-link {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+
+  color: var(--dark-color);
+}
+
+.mobile-nav-list .current,
+.mobile-nav-list .link:hover,
+.mobile-nav-list .link:focus,
+.menu-address-item:hover,
+.menu-address-item:focus {
+  color: var(--pressed-state-color);
+}
+
+.nav-list .item {
+  position: relative;
+}
+
+.nav-list .link {
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.nav-list .link:after {
+  position: absolute;
+  bottom: 0;
+
+  display: block;
+  content: "";
+  height: 4px;
+  width: 100%;
+
+  border-radius: 2px;
+}
+
+.nav-list .current::after {
+  background-color: var(--pressed-state-color);
+}
+
+.mobile-contacts,
+.mobile-nav-list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.address {
+  margin-left: auto;
+
+  font-style: normal;
+}
+
+.mobile-menu-item {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  color: var(--text-color);
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 /* ======================= Header section ========================== */

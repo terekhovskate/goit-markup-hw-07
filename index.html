@@ -51,7 +51,7 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-button">
+        <button type="button" class="menu-button-open">
           <svg class="icon-menu" width="32" height="22" stroke="black">
             <use href="./images/icon.svg#icon-menu"></use>
           </svg>
@@ -59,27 +59,35 @@
       </div>
 
       <div class="mobile-menu-container">
+        <button class="menu-button-close" type="button">
+          <svg width="8" height="8">
+            <use
+              class="menu-button-close-icon"
+              href="./images/icon.svg#close-icon"
+            ></use>
+          </svg>
+        </button>
         <nav class="mobile-menu-nav">
           <ul class="mobile-nav-list list">
             <li class="mobile-menu-item">
-              <a href="./index.html" class="link current">Studio</a>
+              <a href="./index.html" class="menu-link current">Studio</a>
             </li>
             <li class="mobile-item">
-              <a href="./portfolio.html" class="link">Portfolio</a>
+              <a href="./portfolio.html" class="menu-link">Portfolio</a>
             </li>
             <li class="mobile-menu-item">
-              <a href="" class="link">Contacts</a>
+              <a href="" class="menu-link">Contacts</a>
             </li>
           </ul>
         </nav>
-        <address class="address">
+        <address class="menu-address">
           <ul class="mobile-contacts list">
-            <li class="mobile-menu-item">
+            <li class="mobile-menu-itemm">
               <a href="mailto:info@devstudio.com" class="address-item link"
                 >info@devstudio.com</a
               >
             </li>
-            <li class="mobile-menu-item">
+            <li class="mobile-menu-itemm">
               <a href="tel:+110001111111" class="address-item link"
                 >+11 (000) 111-11-11</a
               >
