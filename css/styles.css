@@ -137,6 +137,7 @@ p {
     position: fixed;
     top: 0;
     left: 0;
+
     z-index: 1000;
 
     display: flex;
@@ -361,7 +362,7 @@ p {
     margin-top: 0;
     margin-bottom: 0;
     font-style: normal;
-
+    font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -397,6 +398,12 @@ p {
     margin-bottom: 72px;
 
     text-align: center;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    letter-spacing: 0.02em;
+
+    color: var(--dark-color);
   }
 
   .info {
@@ -1009,9 +1016,9 @@ p {
 
   .address-item {
     font-weight: 400;
-    font-size: 16px;
-    line-height: 1.5;
-    letter-spacing: 0.02em;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.04em;
     text-decoration: none;
 
     color: var(--text-color);
@@ -1070,10 +1077,6 @@ p {
 
   .features-subtitle,
   .service {
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
-
     text-align: left;
   }
 
@@ -1164,6 +1167,11 @@ p {
     flex-direction: row;
     gap: 40px;
   }
+  .address-item {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+  }
 
   /* ======================= 1st section/Hero section ========================== */
   .overlay {
@@ -1220,22 +1228,18 @@ p {
     padding-top: 120px;
     padding-bottom: 120px;
   }
+
+  .features-subtitle,
+  .service {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+  }
   /* ======================= 3rd section/ What we are doing ========================== */
 
   .pictures {
     display: block;
     padding-bottom: 120px;
-  }
-
-  .section-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-
-    letter-spacing: 0.02em;
-    text-transform: capitalize;
-
-    color: var(--dark-color);
   }
 
   .img-list {
