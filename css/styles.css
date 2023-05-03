@@ -389,8 +389,9 @@ p {
     text-align: center;
   }
 
-  .members .section-title {
+  .section-title {
     margin-bottom: 72px;
+    text-align: center;
   }
 
   .info {
@@ -453,6 +454,218 @@ p {
   .socials-link:hover,
   .socials-link:focus {
     background-color: #404bbf;
+  }
+  /* ======================= 5th section/ Clients section ========================== */
+  .clients {
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+
+  .companies {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    column-gap: 16px;
+    row-gap: 72px;
+  }
+  .companies-list {
+    width: calc((100% - 16px) / 2);
+    display: flex;
+    height: 88px;
+  }
+  .companies-item {
+    width: 105px;
+    height: 56px;
+    margin: 16px 32px;
+  }
+  .companies-link {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+
+    color: var(--light-grey-color);
+
+    border: 1px solid var(--subtle-text-color);
+    border-radius: 4px;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+      color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .companies-link:hover,
+  .companies-link:focus {
+    border-color: #404bbf;
+    color: #404bbf;
+  }
+
+  .companies-item {
+    fill: currentColor;
+  }
+  /* ======================= Footer section ========================== */
+  .footer {
+    padding-top: 96px;
+    padding-bottom: 96px;
+
+    background-color: var(--dark-color);
+  }
+  .footer-logo {
+    display: block;
+    margin-bottom: 16px;
+
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    color: var(--primary-brand-color);
+  }
+  .footer-studio {
+    color: var(--light-color);
+  }
+
+  .footer-text {
+    width: 264px;
+    margin: 0 auto;
+    margin-bottom: 72px;
+
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+
+    color: var(--light-color);
+  }
+
+  .social-media-title {
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    text-align: center;
+
+    color: var(--white-background-color);
+  }
+  .social-media-icon {
+    width: 24px;
+    height: 24px;
+
+    fill: var(--light-color);
+  }
+
+  .social-media-list {
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-bottom: 72px;
+  }
+
+  .social-media-item {
+    width: 40px;
+    height: 40px;
+  }
+  .social-media-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+
+    background-color: var(--primary-brand-color);
+
+    border-radius: 50%;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .social-media-link:hover,
+  .social-media-link:focus {
+    background-color: #31d0aa;
+  }
+  .subscribe-label {
+    display: block;
+    margin-bottom: 16px;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    letter-spacing: 0.02em;
+
+    color: var(--white-background-color);
+  }
+
+  .subscribe-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .subscribe-input {
+    width: 100%;
+    padding: 8px 16px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    background: transparent;
+    color: var(--white-background-color);
+
+    border: 1px solid #ffffff;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+  }
+
+  .subscribe-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+
+    color: var(--white-background-color);
+    opacity: 0.6;
+  }
+
+  .subscribe-button {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    min-width: 165px;
+    padding: 8px 24px;
+    margin: 0 auto;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+
+    background-color: var(--primary-brand-color);
+    color: var(--white-background-color);
+    border: none;
+
+    border-radius: 4px;
+
+    cursor: pointer;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .subscribe-button:hover,
+  .subscribe-button:focus {
+    background-color: var(--pressed-state-color);
+  }
+  .subscribe-icon {
+    fill: var(--white-background-color);
   }
 }
 /* ======================= Tablet version ========================== */
@@ -618,6 +831,70 @@ p {
     justify-content: center;
     row-gap: 64px;
   }
+  /* ======================= 5th section/ Clients section ========================== */
+
+  .companies {
+    column-gap: 24px;
+  }
+  .companies-list {
+    width: calc((100% - 48px) / 3);
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1157px) {
+  .clients-container,
+  .footer-container {
+    width: 552px;
+  }
+}
+
+/* ======================= Footer section ========================== */
+@media screen and (min-width: 768px) {
+  .footer-info {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+  }
+
+  .footer-logo {
+    display: inline-block;
+  }
+  .footer-text {
+    margin-bottom: 0;
+  }
+  .company-info {
+    margin-right: 24px;
+    margin-bottom: 72px;
+  }
+  .social-media-title {
+    text-align: center;
+  }
+  .social-media-list {
+    margin-bottom: 0;
+  }
+
+  .subscribe-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .subscribe-input {
+    width: 264px;
+
+    margin-bottom: 0;
+  }
+  .social-media-title {
+    text-align: left;
+  }
+  .subscribe-button {
+    margin: 0;
+  }
+  .social-media {
+    margin-bottom: 72px;
+  }
+
+  .subscribe-label {
+    text-align: left;
+  }
 }
 /* ======================= Desktop version ========================== */
 /* ======================= Header section ========================== */
@@ -631,6 +908,7 @@ p {
     flex-direction: row;
     gap: 40px;
   }
+
   /* ======================= 1st section/Hero section ========================== */
   .overlay {
     max-width: 1440px;
@@ -694,12 +972,10 @@ p {
   }
 
   .section-title {
-    margin-bottom: 72px;
-
     font-weight: 700;
     font-size: 36px;
     line-height: 1.1;
-    text-align: center;
+
     letter-spacing: 0.02em;
     text-transform: capitalize;
 
@@ -714,7 +990,42 @@ p {
   .img-list .item {
     width: calc((100% - 48px) / 3);
   }
+  /* ======================= 4th section/Members section ========================== */
+  .members {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  /* ======================= 5th section/ Clients section ========================== */
+  .clients {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+  .companies {
+    gap: 24px;
+  }
+  .companies-list {
+    width: calc((100% - 120px) / 6);
+  }
+  /* ======================= Footer section ========================== */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  .footer-info {
+    flex-wrap: nowrap;
+  }
+  .company-info {
+    margin-right: 120px;
+    margin-bottom: 0;
+  }
+  .social-media {
+    margin-right: 80px;
+    margin-bottom: 0;
+  }
 }
+
 /* ======================= 3rd section/ What we are doing ========================== */
 /* .pictures {
   padding-bottom: 120px;
