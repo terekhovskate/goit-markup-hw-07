@@ -54,6 +54,7 @@ p {
 }
 
 /* ======================= Header section General ========================== */
+
 .container {
   padding-left: 15px;
   padding-right: 15px;
@@ -137,7 +138,8 @@ p {
     position: fixed;
     top: 0;
     left: 0;
-
+    width: 100vw;
+    height: 100vh;
     z-index: 1000;
 
     display: flex;
@@ -361,8 +363,7 @@ p {
   .position {
     margin-top: 0;
     margin-bottom: 0;
-    font-style: normal;
-    font-weight: 500;
+
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -712,7 +713,10 @@ p {
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
 
-    width: 408px;
+    height: 584px;
+    width: 392px;
+    overflow: scroll;
+
     padding-top: 72px;
     padding-right: 24px;
     padding-bottom: 24px;
@@ -1153,6 +1157,10 @@ p {
 
   .subscribe-label {
     text-align: left;
+  }
+  /* ======================= Modal ========================== */
+  .modal {
+    width: 408px;
   }
 }
 /* ======================= Desktop version ========================== */
