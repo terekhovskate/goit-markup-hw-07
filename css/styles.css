@@ -88,11 +88,6 @@ p {
     padding-bottom: 24px;
   }
 }
-@media screen and (max-width: 319px) {
-  body {
-    min-width: 320px;
-  }
-}
 
 /* ======================= Mobile Version========================== */
 
@@ -1173,7 +1168,7 @@ p {
 
 @media screen and (min-width: 1158px) {
   .container {
-    width: 1158px;
+    width: 1440px;
   }
 
   .contacts {
